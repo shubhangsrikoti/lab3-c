@@ -10,8 +10,10 @@
 #include <readline/readline.h>
 
 int sum_n(int n) {
-  if (n >= 1)
+  
+  if (n >= 1) {
     return n + sum_n(n - 1);
+  }
   else
     return 0;
 }
@@ -21,10 +23,6 @@ int print_n(const char *s, int n) {
     printf("%s\n", s);
     return print_n(s, n - 1);
   }
-
-  else 
-    return 0;
-  
 }
 
 int main(void) {
@@ -35,5 +33,5 @@ int main(void) {
   char *string = readline("Enter a string: ");
   print_n(string, num);
 
-    return 0;
+  return 0;
 }
