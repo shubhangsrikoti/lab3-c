@@ -21,15 +21,15 @@ int print_n(const char *s, int n) {
     printf("%s\n", s);
     return print_n(s, n - 1);
   }
+}
 
 int main(void) {
 
   int num = atoi(readline("Enter an int: "));
-  printf("sum is %i\n", sum_n(num)))
+  printf("sum is %i\n", sum_n(num));
 
   char *string = readline("Enter a string: ");
   print_n(string, num);
 
-  return 0;
-
+    return 0;
 }
