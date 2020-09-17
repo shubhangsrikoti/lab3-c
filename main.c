@@ -21,6 +21,10 @@ int print_n(const char *s, int n) {
     printf("%s\n", s);
     return print_n(s, n - 1);
   }
+
+  else {
+    return 0;
+  }
 }
 
 int main(void) {
